@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-bg{
+  background-color: #f3f3f3;
+}
+
+.spinner-size{
+  width: 3rem; 
+  height: 3rem;
+}
+
+.spinner-pos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: rgba(238,238,238,0.5);
+}
+.spinner-pos:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}

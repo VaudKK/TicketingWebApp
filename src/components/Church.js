@@ -30,7 +30,7 @@ class Church extends Component {
 
         e.preventDefault();
 
-        axios.post(`http://localhost:51000/church`, { churchRegistrationInfo })
+        axios.post(`http://localhost:51000/church`, churchRegistrationInfo )
             .then(res => res.json)
             .then(res => {
                 this.setState({
@@ -114,7 +114,7 @@ class Church extends Component {
                                         name="seatCount"
                                         value={this.state.seatCount}
                                         onChange={this.handleChange}></input>
-                                    <button className="btn btn-primary btn-block" type="submit">
+                                    <button className={`btn btn-primary btn-block ${this.state.isLoading ? "disabled" : ""} `} type="submit">
                                         {this.state.isLoading ? (
                                             <div>
                                                 <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>{" "}Loading...
