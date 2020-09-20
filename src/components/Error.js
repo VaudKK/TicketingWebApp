@@ -20,7 +20,7 @@ class Error extends Component {
                             Oops
                         </div>
                         <p className="lead">
-                            You request can't be complete at the moment. Try again later.
+                            You request can't be completed at the moment. Try again later.
                         </p>
                         <p className="lead">
                             {errorMessage}
